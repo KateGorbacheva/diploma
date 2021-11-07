@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+		background: white;
+/* background: #eee; */
+font-family: 'Arimo', sans-serif;
+
+}
+
+
+.contain{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	z-index: 1;
+
+}
+
+
+section{
+	position: relative;
+	height: 100vh;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	/* color: #fff; */
+}
+section::after{
+	position: relative;
+	content: "";
+	width: 100%;
+	height: 100%;
+	/* background: rgba(0,0,0, .25);*/
+
+}
+.section1{
+
+	color: #fff;
+	align-items:center;
+	justify-content: center;
+	background: url(piter-zimnii.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	background-size: cover;
+	/* align */
+}
+.contain1{
+
+	color: #fff;
+	align-items:center;
+	justify-content: center;
+	background: url(piter-zimnii.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	background-size: cover;
+	/* align */
+}
+.section2{
+	background: white;
+	text-align: justify;
+	color: black;
+}
+.section3{
+
+	background: white;
+	text-align: justify;
+	color: black;
+
+}
+
+h1 {
+
+	text-align: center;
+	font-size: 48px;
+	font-weight: 700;
+}
+h2 {
+	/* text-shadow: 2px 2px silver; */
+	color: #122FAA ;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	/* #122FAA */
+	/* #4682B4 */
+}
+h3 {
+	/* text-shadow: 2px 2px silver; */
+	color: #122FAA ;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 700;
+	/* #122FAA */
+	/* #4682B4 */
+}
+p{
+	text-align: justify;
+	font-size: 24px;
+	margin: 20px 0;
+}
+/* .button {
+
+	display:inline-block;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10 px 40 px;
+	color: #fff;
+	border: 1px solid #fff;
+
+} */
+.but{
+	text-align: center;
+}

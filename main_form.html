@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href ="style_menu.css"
+                type = "text/css">
+                <link rel="stylesheet" href ="header_main.css"
+                                type = "text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<style>
+body{
+		background: white;
+
+font-family: 'Arimo', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.border-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: rgba(0, 128, 128, .9);
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+.border-button:before, .border-button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.border-button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.border-button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.border-button:hover:before,
+.border-button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.border-button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.border-button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.border-button:hover {
+  background: rgba(0, 0, 255, .6);
+}
+p {
+  text-align: center;
+  color:rgba(255, 255, 255, .8);
+}
+hr {
+   border: none; /* Убираем границу */
+   background-color: LightSkyBlue; /* Цвет линии */
+   color: red; /* Цвет линии для IE6-7 */
+   height: 4px; /* Толщина линии */
+   width: 15%;
+  margin: 0 25% 0 42%;
+  }
+  .text{
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    /* color:LightSlateGrey; */
+    color: #495d7f;
+    font-size: 20px;
+  }
+.heading{
+  /* text-shadow: 2px 2px silver; */
+	/* color: #122FAA ; */
+  color:#495d7f;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+.text1{
+  font-family: 'Arimo', sans-serif;
+  text-align: left;
+  /* color:LightSlateGrey; */
+  color: #495d7f;
+  font-size: 20px;
+}
+.heading_cars{
+/* text-shadow: 2px 2px silver; */
+/* color: #122FAA ; */
+color:#495d7f;
+text-align: center;
+font-size: 25px;
+font-weight: 700;}
+mark{
+  /* background-color: #80DAEB; */
+  background-color: LightSkyBlue;
+  color: #000033;
+}
+#footer {
+ position:relative; /* Фиксированное положение */
+ left: 0; bottom: 0; /* Левый нижний угол */
+ padding: 10px; /* Поля вокруг текста */
+ background: #eee; /* Цвет фона */
+ color: black; /* Цвет текста */
+ width: auto; /* Ширина слоя */
+
+}
+
+
+/* img{
+ max-width: 100%;
+ height: auto;
+ display: block;
+margin: 0 25% 0 25%;
+} */
+.contain1{
+
+	color: #fff;
+	align-items:center;
+	justify-content: center;
+	background: url(piter-zimnii.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	background-size: cover;
+  /* width: 1120px; */
+  height: 789px;
+  text-align: center;
+
+
+
+	/* align */
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+<script>
+	$( ".element" ).html( $( ".module" ).width() );
+$( ".browser" ).html( $( window ).width() );
+
+$( window ).resize(function() {
+  $( ".element" ).html( $( ".module" ).width() );
+  $( ".browser" ).html( $( window ).width() );
+});
+	</script>
+</head>
+<body>
+	<!-- <header class="header" id="header">
+		<div class="contain header-wrap">
+	  <a href="#" class="logo">Logo</a>
+			<nav>
+	  <ul>
+      <li><a href="main_form.html">Главная</a></li>
+	    <li><a href="order/order.html">Заказать</a></li>
+	    <li><a href="#anchor">Машины</a></li>
+	    <li><a href="info.php">Контакты</a></li>
+	    <li><a href="enter/enter.php">Вход</a></li>
+	  </ul>
+	</nav>
+</div>
+</header> -->
+
+<header class="header" id="header">
+  <!-- style="background-color: #eee;" -->
+
+<nav class="navbar navbar-expand-lg navbar-light "  style="background-color:#ebebeb;" >
+
+  <a class="navbar-brand " href="#">Logo</a>
+
+  <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item active">
+
+        <a class="nav-link" href="main_form.html">Главная<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="order/order.html">Заказать</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#anchor">Машины</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link " href="info.php">Контакты</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link " href="enter/enter.php">Вход</a>
+
+      </li>
+    </ul>
+
+</div>
+</nav>
+
+</header>
+<main>
+  <br><br><br>
+<!-- <section class="section1"> -->
+
+		<div class="contain1">
+<br><br><br><br><br>
+		<div class="module">	<h1>Официальный трансфер в Санкт-Петербурге</h1></div>
+<br>
+			<div class="module"><p>Идеальный способ заказать такси в Санкт-Петербурге:
+        трансфер из аэропорта Пулково, Пушкин, Петергоф, городское такси или услуги шофера с официальным бизнесом,
+        базирующимся в Санкт-Петербурге, Россия.<br>
+Мы гарантируем комфорт и безопасность, фиксированные тарифы, различные варианты оплаты
+ и круглосуточное обслуживание на английском языке. <br>
+ Заказывайте трансфер из Санкт-Петербурга онлайн прямо сейчас!
+  </p></div>
+
+  <!-- <button type="submit" class="btn btn-outline-info"><span class="text-button">Изменить</span></button> -->
+			<div class="module"><div class="but">
+<a href="order/order.html" class="border-button">ЗАКАЗАТЬ</a>
+		<!-- <button>	<a href="order/order.html" class="button">ЗАКАЗАТЬ</a></button> -->
+</div></div>
+		</div>
+	<!-- </section> -->
+<br><br><br>
+<!-- <section class="section2"> -->
+		<div class="contain">
+			<div class="module" ><h1 class="heading" style="color:#495d7f;">Трансфер Санкт-петербурга</h1></div>
+      <br>
+      <hr>
+      <br>
+			<div class="module"><p class="text">St.Petersburg Taxi - это англоязычная круглосуточная служба такси,
+        которая обеспечивает частные трансферы из международного аэропорта Пулково,
+        в железнодорожные и автобусные вокзалы, речные и морские круизные порты,
+        отели в центре города, театры и музеи.
+      <br>
+      Онлайн-бронирование, выбор различных способов оплаты,
+       лучшие цены и быстрое подтверждение.
+   Все трансферы из аэропорта включают услугу
+   «Встреча и приветствие» в зале прибытия.
+ </p></div>
+ <div class="module"><p><img src="images/pv.jpeg" alt="Аэропорт Пулково" class="responsive"></p>
+</div></div>
+<!-- </section> -->
+<br><br>
+ <!-- <section class="section3"> -->
+   <div class="contain">
+   <div class="module"><h1 class="heading">Международный аэропорт Санкт-Петербург Пулково такси и трансфер</h1> </div>
+   <br>
+   <hr>
+   <br>
+   <div class="module"><p class="text1">Помимо трансфера из аэропорта и городского такси, мы с радостью предложим комфортные поездки в далекие пригороды, такие как Пушкин / Царское Село, Павловск, Петергоф / Петродворц.
+      Воспользуйтесь услугами нашей компании для трансферов в Кронштадт, Гатчину или Igora Drive Racing,
+      а также для междугородних трансферов в Хельсинки, Таллинн, Великий Новгород, Выборг и Псков. <br><br>
+
+Наслаждайтесь частной экскурсией по городу или закажите услуги шофера в Санкт-Петербурге и оцените удобство,
+ комфорт и безопасность внедорожника и микроавтобуса или роскошь Mercedes-Benz S-Class или Mercedes-Maybach.
+  Минимальная продолжительность аренды шофера - 3 часа, ставка действительна в черте города.
+   Используйте этот вариант, если хотите за один день посетить Пушкин и Петергоф.<br><br>
+<a id="anchor"></a>
+Получайте фиксированные тарифы на такси, бронируйте все трансферы онлайн и выбирайте предпочтительные варианты оплаты:
+картой, PayPal или наличными. Вы получите ваучер с подтверждением по электронной почте в течение короткого периода времени.
+ Для вашего удобства у нас есть множество различных автомобилей: большие внедорожники и универсалы, минивэны и микроавтобусы,
+ представительские седаны и роскошные лимузины.<p> </div>
+<br>
+
+   <div class="module"><h1 class="heading">Варианты транспортных средств для трансфера из аэропорта Санкт-Петербурга и такси в 2021 году</h1> </div>
+   <br>
+   <hr>
+   <br>
+   <div class="module"><p class="text1">Внимание: выбирайте подходящий автомобиль для себя и своей группы.
+      В «Санкт-Петербургском такси» есть широкий выбор транспортных средств: от небольшого седана эконом-класса
+      на 2 пассажира до представительского Mercedes S-класса, роскошного Mercedes-Maybach или лимузина Rolls-Royce.
+      От большого внедорожника на 4 пассажира до просторного 6-местного минивэна. Фиксированные тарифы от 7,50 € на человека!</p>
+   </div> </div>
+ <!-- </section> -->
+<!--
+ <section class="section3"> -->
+  <br> <br>
+   <div class="contain">
+<div class="module"><h1 class="heading_cars"><mark>Автомобиль эконом-класса 20 евро за машину</mark></h1></div>
+<br>
+<div class="module"><p class="text">Трансфер из аэропорта Пулково в / из центра города на Renault Logan, Ford Focus или аналогичный для 1-2 пассажиров и 2 багажа.</p></div>
+<br>
+ <div class="module"><p><img src="econom.png" alt="Ford Focus Econom" class="responsive"></p></div>
+<br>
+ <div class="module"><h1 class="heading_cars"><mark>Автомобиль комфорт-класса 30 евро за машину</mark></h1></div>
+<br>
+ <div class="module"><p class="text">Трансфер из аэропорта Пулково в / из центра города на RВнедорожник, Skoda Kodiaq, Pathfinder или аналогичный для 1-4 пассажиров и 4 багажа.</p></div>
+ <br>
+  <div class="module"><p><img src="images/comfort.png" class="responsive"></p></div>
+<br>
+<div class="module"><h1 class="heading_cars"><mark>Автомобиль Minivan 50 евро за машину</mark></h1></div>
+<br>
+  <div class="module"><p class="text">Трансфер из аэропорта Пулково в / из центра города на Minivan VW, Peugeot или аналогичный на 1-6 пассажиров и 6 мест багажа.</p></div>
+<br>
+   <div class="module"><p><img src="images/minivan.png" class="responsive"></p></div>
+<br>
+
+   <div class="module"><h1 class="heading_cars"><mark>Автомобиль премиум-класса 65 евро за машину</mark></h1></div>
+<br>
+   <div class="module"><p class="text">Трансфер из аэропорта Пулково в / из центра города на Mercedes S-класса, BMW7 или аналогичный для 1-3 пассажиров и 3 багажа.</p></div>
+<br>
+    <div class="module"><p><img src="images/executive.png" class="responsive"></p></div>
+<br>
+
+    <div class="module"><h1 class="heading_cars"><mark>Автомобиль класса люкс 95 евро за машину</mark></h1></div>
+<br>
+    <div class="module"><p class="text">Трансфер из аэропорта Пулково в / из центра города на Mercedes - Maybach для 1-3 пассажиров и 3 багажа.</p></div>
+<br>
+     <div class="module"><p><img src="images/luxury.png" width="690px" height="305px" class="responsive"></p></div>
+<br>
+
+<!-- <div id="footer">
+ &copy;  Горбачева Екатерина 4731
+</div> -->
+   </div>
+
+  <!-- </section> -->
+
+</main>
+
+
+
+
+</body>
+
+
+</html>

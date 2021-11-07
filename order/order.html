@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Заказ</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href ="order_css.css"
+	                type = "text/css">
+									<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+									<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+									<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	<!-- <header class="header" id="header">
+		<div class="contain header-wrap">
+	  <a href="#" class="logo">Logo</a>
+			<nav>
+	  <ul>
+       <li><a href="/index.html">Главная</a></li>
+			<li><a href="http://localhost:8888/Project0.2/main_form.html">Главная</a></li>
+	    <li><a href="order.html">Заказать</a></li>
+	    <li><a href="http://localhost:8888/Project0.2/main_form.html#anchor">Машины</a></li>
+	    <li><a href="#">Контакты</a></li>
+	    <li><a href="http://localhost:8888/Project0.2/enter/enter.html">Вход</a></li>
+	  </ul>
+	</nav>
+	</div>
+</header> -->
+<header class="header" id="header">
+  <!-- style="background-color: #eee;" -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+
+  <a class="navbar-brand " href="#">Logo</a>
+
+  <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item active">
+
+        <a class="nav-link" href="http://localhost:8888/Project0.2/main_form.html">Главная<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="order.html">Заказать</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:8888/Project0.2/main_form.html#anchor">Машины</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:8888/Project0.2/info.php">Контакты</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:8888/Project0.2/enter/enter.php">Вход</a>
+
+      </li>
+    </ul>
+
+</div>
+</nav>
+
+</header>
+<br><br><br><br><br>
+<div class = "container">
+<form class="form" id="form" name="form">
+
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Заказ с сайта">
+			<input type="hidden" name="admin_email" value="gorbacheva1e0a@gmail.com">
+			<input type="hidden" name="form_subject" value="Новый заказ">
+			<input type="hidden" name="status" value="Ожидание">
+			<input type="hidden" name="id_users" value="1">
+			<!-- END Hidden Required Fields -->
+
+	<div class="contain">
+		<div class="form-group">
+		<h1>Заказ</h1>
+		<br>
+ <label for="sel1">Обращение*:</label>
+
+    <select name="Обращение" id="sel1" class="form-control">
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Ms.">Ms.</option>
+				<option value="Dr.">Dr.</option>
+				<option value="Prof.">Prof.</option>
+				<option value="Hon.">Hon.</option>
+				<option value="H.E.">H.E.</option>
+    </select>
+
+    <div class="row">
+			<div class="col">
+				<label for="name">Имя*:</label>
+
+       <input type="text" class="form-control" name="Имя"  id="name" size="25" placeholder="Имя" required>
+
+			</div>
+			<div class="col">
+				<label for="lastname">Фамилия*:</label>
+
+         <input type="text" class="form-control" name="Фамилия" id="lastname" size="25" placeholder="Фамилия" required>
+        </div>
+</div>
+
+	<label for="email">Почта*:</label>
+
+		<input type="email" class="form-control" name="Почта" id="email" size="25" placeholder="email" required>
+
+	<label for="telephone">Телефон*:</label>
+
+ 		<input type="tel" class="form-control" name="Телефон" id="telephone" size="25" placeholder="телефон" required>
+
+	 <div class="row">
+		 <div class="col">
+			 <label for="date">Выберете дату*:</label>
+ 				<input type="date" class="form-control" name="Дата" id="calendar" size="25" required>
+		</div>
+ 	 <div class="col">
+		 <label for="time">Выберете время*:</label>
+ 			<input type="time" class="form-control" name="Время" id="time" size="25" required>
+ 	 </div>
+	 </div>
+
+	 <label for="adress1">Адрес сбора*:</label>
+	  	<input type="text" class="form-control" name="Адрес_встречи" id="adress1" size="25" required>
+
+	 <div class="row">
+		 <div class="col">
+			 <label for="numofair">Номер рейса:</label>
+ 				<input type="text" class="form-control" name="Номер_авиарейса" id="numofair" size="25">
+				</div>
+		<div class="col">
+			<label for="numoftrain">Номер поезда:</label>
+ 				<input type="text" class="form-control" name="Номер_поезда" id="numoftrain" size="25">
+ 	 </div>
+	 </div>
+
+	 <label for="adress2">Адрес назначения*:</label>
+	  <input type="text" class="form-control" name="Адрес_назначения" id="adress2"  size="25" required>
+
+	 <label for="sel2">Выберите машину:</label>
+     <select name="Машина" id="sel2" class="form-control">
+         <option value="Comfort (1 - 4 чел. + 4 багажа)">Comfort (1 - 4 чел. + 4 багажа)</option>
+         <option value="Minibus (1 - 6 чел. + 6 багажа)">Minibus (1 - 6 чел. + 6 багажа)</option>
+         <option value="Executive (1 - 3 чел. + 3 багажа)">Executive (1 - 3 чел. + 3 багажа)</option>
+				 <option value="Luxury (1 - 3 чел. + 3 багажа)">Luxury (1 - 3 чел. + 3 багажа)</option>
+
+     </select>
+
+
+		 <div class="row">
+			 <div class="col">
+				 <label for="passenger">Количество пассажиров*:</label>
+			 <input type="number" min = "1" class="form-control" name="Кол-во_пассажиров" id="passenger" vsize="25" required>
+			</div>
+			<div class="col">
+				<label for="children">Дети меньше 7 лет:</label>
+			 <input type="number" min = "0" value = "0" class="form-control" name="Дети_меньше_7_лет" id="children" size="25" >
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<label for="bigbag">Количество чемоданов*:</label>
+			<input type="number" min = "0" class="form-control" name="Кол-во_чемоданов" id="bigbag" size="25" required>
+		 </div>
+		 <div class="col">
+			 <label for="smallbag">Количество ручной клади*:</label>
+			<input  type="number" min = "0" class="form-control" name="Кол-во_ручной_клади" id="smallbag" size="25" required>
+		 </div>
+	 </div>
+
+<label for="sel3">Выберете способ оплаты:</label>
+
+     <select name="Способ_оплаты" id="sel3" class="form-control">
+         <option value="Картой онлайн">Картой онлайн</option>
+         <option value="Наличный расчет EUR">Наличный расчет EUR</option>
+         <option value="Наличный расчет RUB">Наличный расчет RUB</option>
+				 <option value="Наличный расчет USD">Наличный расчет USD</option>
+
+     </select>
+
+		 <label for="comment">Коментарии к заказу:</label>
+
+				<textarea type="text" class="form-control" name="Коментарии_к_заказу" id="comment" cols="50" rows="6"></textarea>
+	<br>
+<button type="submit" class="btn btn-success" id = "sendMail"><span class="text-button">Отправить заявку</span></button>
+</div>
+</div>
+
+
+</form>
+</div>
+<br><br>
+<div id ="errorMess"></div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
